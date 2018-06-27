@@ -1,0 +1,18 @@
+<% include partials/header.ejs %>
+    <form method="post" action="/feed">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Image Link</label>
+            <input name="imageURL" type="url" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="e.g. https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.pexels.com%2Fphotos%2F133953%2Fpexels-photo-133953.jpeg&f=1">
+            <small id="emailHelp" class="form-text text-muted">Please provide a valid image url. Copy and paste it if you like!</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Name</label>
+            <input name="name" type="text" class="form-control" id="exampleInputPassword1" placeholder="Name your post">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Description</label>
+            <input name="imageDescription" type="text" class="form-control" id="exampleInputPassword1" placeholder="Describe your post">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+<% include partials/footer.ejs %>

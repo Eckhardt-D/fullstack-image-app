@@ -1,0 +1,30 @@
+<% include partials/header.ejs %>
+
+<div class="container py-5">
+    <section class="feedArea row">
+        <% for(let i = 0; i < products.length; i++) { %>
+        <div class="fullCard mx-auto col-xlg-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card mx-auto my-4" style="width: 18rem;">
+                <img class="card-img-top" 
+                    src= <%= products[i].imageURL %>
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><%= products[i].name %></h5>
+                    <p class="card-text"><%= products[i].imageDescription %></p>
+                </div>
+                <div class="card-body">
+                    <form method="POST" action="/likes">
+                        <button value="<%= products[i]._id %>" type="submit" name="likes" class="card-link">Like <span><%= products[i].likes %></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <% } %>
+    </section>
+</div>
+
+<% include partials/footer.ejs %>
+
+
+
+

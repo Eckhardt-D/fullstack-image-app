@@ -1,0 +1,19 @@
+<nav class="navbar footer-nav navbar-light bg-light">
+  <p id="dateThing">&copy; <span></span> ImageApp</p>
+</nav>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" 
+  integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" 
+  crossorigin="anonymous"></script>
+  <script>
+    var d = new Date().getFullYear();
+    $('#dateThing span').html(d.toString());
+  </script>
+</body>
+</html>
